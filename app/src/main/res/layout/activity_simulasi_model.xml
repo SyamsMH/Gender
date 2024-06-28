@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coral"
+    tools:context=".SimulasiModelActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="69dp">
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/beige"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/btnCheck"
+        app:layout_constraintStart_toStartOf="@id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@id/btnCheck" />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Simulasi Model"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/longhair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:ems="15"
+        android:hint="Long Hair (0-1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/foreheadwidthcm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="15"
+        android:hint="Forehead Width Cm (11.4-15.5)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/longhair"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/foreheadheightcm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="15"
+        android:hint="Forehead Height Cm (5.1-7.1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foreheadwidthcm"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/nosewide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="15"
+        android:hint="Nose Wide (0-1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foreheadheightcm"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/noselong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:hint="Nose Long (0-1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nosewide"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/lipsthin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:hint="Lips Thin (0-1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noselong"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/distancenosetoliplong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:hint="Distance Nose To lip long (0-1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lipsthin"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Predict"
+        android:textColor="@color/beige"
+        android:textColorHint="@color/beige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/distancenosetoliplong"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
